@@ -1,0 +1,253 @@
+aa html,
+body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, cca menu,
+nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: black;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: black;
+  width: 100%;
+}
+.navbar .icon {
+  width: 50%;
+  height: 50%;
+}
+.navbar .icon img {
+  width: 100%;
+}
+.navbar ul {
+  display: none;
+}
+
+.banner .vid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .vid h1 {
+  font-size: 40px;
+  padding: 70px 0;
+}
+
+.about {
+  padding: 50px 0;
+  background-color: black;
+}
+.about h2 {
+  font-size: xx-large;
+  font-style: oblique;
+  text-align: center;
+  margin-top: 40px;
+  color: pink;
+  margin-top: 2rem;
+}
+.about .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about .text p {
+  color: white;
+  margin-top: 2rem;
+}
+.about .text button {
+  width: 15rem;
+  height: 3rem;
+  border: solid white 1px;
+  text-align: center;
+  border-radius: 3rem;
+  margin-top: 2rem;
+  background-color: black;
+  color: pink;
+}
+.about .text button:hover {
+  background-color: pink;
+  color: black;
+  font-size: larger;
+  transition: 2s;
+}
+
+.gallery {
+  background-color: black;
+}
+.gallery h2 {
+  color: pink;
+  text-align: center;
+  font-size: xx-large;
+  font-style: oblique;
+}
+.gallery .row .col-md-3 .pic {
+  margin: 20px 0;
+  height: 400px;
+  width: 100%;
+}
+.gallery .row .col-md-3 .pic img {
+  height: 100%;
+  width: 100%;
+}
+.gallery .carousel-item {
+  height: 400px;
+  width: 400px;
+}
+.gallery .carousel-item img {
+  height: 100%;
+  width: 100%;
+}
+.gallery #last {
+  display: none;
+}
+
+.contact {
+  padding: 50px 0;
+}
+.contact h2 {
+  color: white;
+  padding-top: 50px;
+}
+.contact form {
+  padding-top: 20px;
+}
+.contact .headings {
+  color: pink;
+  font-style: oblique;
+}
+.contact ul p {
+  color: white;
+}
+.contact ul a {
+  color: white;
+}
+.contact .social-links {
+  background-color: white;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .navbar {
+    background-color: black;
+  }
+  .navbar .icon {
+    width: 15%;
+    height: 15%;
+  }
+  .navbar .icon img {
+    width: 100%;
+  }
+  .navbar ul {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .navbar ul a {
+    color: grey;
+    font-size: x-large;
+    font-style: oblique;
+    padding: 20px;
+    text-decoration: none;
+  }
+  .navbar ul a:hover {
+    color: pink;
+  }
+  .banner {
+    padding: 50px 0;
+  }
+  .banner video {
+    width: 100vw;
+    height: 600px;
+  }
+  .about {
+    padding: 50px 0;
+  }
+  .about h2 {
+    font-size: 50px;
+  }
+  .about .pic {
+    height: 500px;
+  }
+  .about .pic img {
+    height: 100%;
+  }
+  .gallery {
+    padding: 50px 0;
+  }
+  .gallery #carouselExampleIndicators {
+    display: none;
+  }
+  .gallery #last {
+    display: block;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=style.css.map */
