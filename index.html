@@ -9,35 +9,47 @@
     <link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="navigation.css">
     <link rel="stylesheet" href="./CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="./CSS/slick.css">
-    <link rel="stylesheet" href="./CSS/slick-theme.css">
+    <link rel="stylesheet" href="./assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./assets/vendor/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/vendor/boxicons/css/boxicons.min.css">
+    
+   
     <link rel="icon" sizes="0.2px" href="img/logo.png">
       
-       <link rel="icon" sizes="0.2px" href="img/tatiwa.jpg">
+       
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home"></body>
+
 <body>
     <!-- nav bar -->
     <div class="navbar">
         <div class="icon">
             <img src="./img/logo.png" alt="" class="img-fluid">
         </div>
-        <ul>
-            <li><a href="/">Home</a></li>
+        <div class="link">
+          <li><a href="/">Home</a></li>
             <li><a href="#abt">About Us</a></li>
             <li><a href="#gally">Gallery</a></li>
             <li><a href="#gally">Shop</a></li>
             <li><a href="#contact">Contact</a></li>
-        </ul>
+
+        </div>
+       
+
+
+            
+        
+        
 
     </div>
     <!-- end nav -->
 
     <section class="banner" id="banner">
         <div class="vid">
-           <!-- <video src="./img/vids.mp4"></video> -->
-          
+           <video src="./img/vids.mp4" autoplay muted loop>
         </div>
+        <source src="" type="video/mp4">
+      </video>
     </section>
     <!-- end banner -->
 
@@ -51,11 +63,14 @@
                         <img src="./img/WhatsApp Image 2023-10-03 at 00.06.32.jpeg" alt="" class="img-fluid">
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" id="bc">
                     <div class="text">
                         <h2>About Us</h2>
+                        <a href="" class="typewrite" data-period="2000" data-type='[ "About Us" ]'></a>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis veritatis sed delectus similique impedit distinctio nulla animi, corrupti cum quam qui enim optio facilis ea a nostrum omnis labore fugiat. Facere ut pariatur voluptatem corporis quae praesentium aspernatur! Error cumque vitae recusandae nostrum ut. Ipsum, corrupti! Ducimus nisi iusto molestiae iste, ipsum fuga nostrum commodi!</p>
-                        <button class="btn-btn">Contact Us</button>
+                        <div class="button">
+                          <a href="#contact">Contact Us</a>
+                        </div>
 
                     </div>
                 </div>
@@ -180,35 +195,59 @@
                       <input class="w50 form-control" type="text" placeholder="subject" name="" id="" required><br>
                   </div> <br>
                       <textarea class="w100 form-control" name="Write Your message" placeholder="Write your message..." id="" cols="30" rows="10" resize></textarea> <br>
-                      <div class="inputBox w100">
+                     <button class="btn" type="submit" >Submit</button>
+                     
+                      <!-- <div class="inputBox w100">
                           <input class="send" type="submit" value="Send" >
                            
                            
-                    </div>
+                    </div> -->
                   </form>
               </div>
               <div class="col-lg-5 putin ">
                   <br><br><br><br>
+                  <p>How can you communicate?</p>
                   <div class="headings">
-                      <h1> How can you communicate? <br>Contact US</h1>
+                   
+                      <h1> Contact US</h1>
                   </div>
                   <br>
 
-                  <ul>
+
+                  <div class="social">
+                    <div class="o">
+                      <div class="u"><img src="./img/call.jpg" alt="" class="img-fluid"></div>
                       <p>(+263)   772766746</p>
-                      <a href="">chiweshechiweshe58@gmail.com</a>
-                      <p>Address Here</p>
-                      <a href="">queens_finery8</a>
-                  </ul>
-                
-                      <ul class="social-links" >
-                          <li><a href=""><i class="fa fa-linkedin" ></i></a></li>
-                          <li><a href=""><i class="fa fa-twitter" ></i></a></li>
-                          <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                          <li><a href=""><i class="fa fa-github" ></i></a></li>
-                          <li><a href=""><i class="fa fa-instagram" ></i></a></li>
-                          
-                      </ul>
+                    </div>
+
+                    <div class="o">
+                      <div class="u"><img src="./img/mail.jpg" alt="" class="img-fluid"></div>
+                      <p>queens_finery@gmail.com</p>
+                    </div>
+
+                    <div class="o">
+                      <div class="u"><img src="./img/location.jpg" alt="" class="img-fluid"></div>
+                      <p>Semi-Levi Village</p>
+                    </div>
+
+                    <div class="o">
+                      <div class="u"><img src="./img/instagram.jpg" alt="" class="img-fluid"></div>
+                      <p>queens_finery8</p>
+                    </div>
+
+                    <div class="o">
+                      <div class="u"><img src="./img/whatsapp.jpg" alt="" class="img-fluid"></div>
+                      <p>0772 766 746</p>
+                    </div>
+
+                    
+
+                    
+
+                  </div>
+
+                  
+                     
                 
                   
              
@@ -234,9 +273,10 @@
 
 
 
-    <script src="./JS/bootstrap.min.js"></script>
-<script src="./JS/jquery-2.2.0.min.js"></script>
-<script src="./JS/slick.min.js"></script>
-<script src="./JS/main.js"></script>
+ 
+  <script src="./JS/bootstrap.min.js"></script>
+  <script src="./JS/jquery-2.2.0.min.js"></script>
+  <script src="./JS/slick.min.js"></script>
+  <script src="./JS/main.js"></script>
 </body>
 </html>
