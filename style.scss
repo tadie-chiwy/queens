@@ -24,6 +24,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+  
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -32,6 +33,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	overflow-x: hidden;
+  ;
 }
 $color: rgb( 188,0,77 );
 $font: " Arial, Helvetica, sans-serif "  ;
@@ -56,22 +58,82 @@ table {
         width: 50%;height: 50%;
         img{width: 100%;}
     }
-    ul{display: none;
+    .link{display: none;
         
     }
+    ul{display: none;}
+
+   
 }
 // banner
-.banner{
+.banner{height: 560px; 
     .vid{
-        display: flex;justify-content: center;align-items: center;
-        h1{font-size: 40px;padding: 70px 0;}
+        height: 100vh; width: 100vw; margin-top: -180px; 
+        video{width: 100vw;height: 80vh;}
     }
 }
 // about
-.about{padding: 50px 0;
-
-    h2{font-size: x-large;font-style: oblique;text-align: center;margin-top: 40px;}
+.about{padding: -20px 0 40px 0;
+   
     
+
+   .container{ 
+    h2{font-size: xx-large;font-style: oblique;text-align: center;margin-top: 40px;  color: rgb(208, 0, 67);margin-top: 2rem;}
+    
+    
+    .text{
+     display: flex;flex-direction: column;justify-content: center;align-items: center;
+     p{color:black;margin-top: 2rem;}
+     .button{width: 15rem;height: 3rem;border: solid white 1px;text-align: center;border-radius: 3rem;margin-top: 2rem;background-color: black;color: pink;a{color: pink;text-decoration: none;} display: flex; flex-direction: row;justify-content: center;align-items: center;}
+     .button:hover{
+         background-color: pink;color: black;font-size: larger;transition: 2s;
+     }
+    }
+   }
+    
+}
+// gallery
+.gallery{ background-color: black; padding: 50px 0;
+    h2{color: pink;text-align: center;font-size: 40px;font-style: oblique;}
+    .row{
+        .col-md-3{
+            .pic{margin: 20px 0;
+              height: 400px; width: 100%;
+                img{height: 100%;width: 100%;}
+            }
+        }
+    }
+    .carousel-item{height: 400px; width: 400px;
+        img{height: 100%;width: 100%;}
+    }
+    #last{display: none;}
+    
+}
+
+.contact{padding: 50px 0; background-color: white;
+    h2{color: white;padding-top: 50px;}
+    form{
+        padding-top: 20px;
+    }
+    button{background-color: rgb(208, 0, 67);color: white;width: 170px;}
+    .headings{
+        color: rgb(208, 0, 67);font-style: oblique;
+        span{color: black;}
+    }
+    ul{
+       p{color: blacl;}
+       a{color: black;}
+    }
+    .social{
+        .o{
+            display: flex;
+            .u{
+                width: 20px;height: 20px;
+                img{width: 100%;}
+            }
+            p{margin-left: 40px;}
+        }
+    }
 }
 
 
@@ -109,30 +171,51 @@ No media query since this is the default in Bootstrap because it is "mobile firs
             width: 15%;height: 15%;
             img{width: 100%;}
         }
-        ul{
+        .link{
             display: block;display: flex;flex-direction: row;justify-content: space-between; margin-top: 10px;
-            a{color: grey;font-size: x-large;font-style: oblique;padding:  20px;text-decoration: none;}
+            a{color: white;font-size: x-large;font-style: oblique;padding:  20px;text-decoration: none;}
             a:hover{
-                color: pink;
+                color: rgb(208, 0, 67);
             }
         }
+        ul{display: none;}
+        .menu{display: none;}
         
     }
     // banner
-    .banner{padding: 60px;
-        .vid{
-            h1{margin: 40px;font-size: 70px;}
-        }
+    .banner{height: 900px;
+       .vid{  
+      
+        video{width: 100%; background-color: rgb(226, 223,223);margin-top: 180px;}
+       }
     }
     // abt
 
-    .about{
+    .about{ padding: 50px 0;
+       .container{
         h2{
-            font-size: xx-large;
+            font-size: 50px;
             
         }
+        .pic{height: 500px;
+            img{
+                height: 100%;
+
+            }
+        }
+       }
+        
+       
     }
 
+    .gallery{ padding: 50px 0;
+        #carouselExampleIndicators{
+            display: none;
+        }
+        #last{display: block;}
+    }
+
+   
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
